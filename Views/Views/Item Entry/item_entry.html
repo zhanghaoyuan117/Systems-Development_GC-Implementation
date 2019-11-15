@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="inputitem.css">
+	</head>
+	<body>
+		<div class="logo">
+			<img id="imageLogo" src="../Images/Rnbw_Circle.png">
+			<h1 id="company_name">Gianella Cycles</h1>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="../Home/home.html">Home</a></li>
+				<li><a href="#">Input item</a></li>
+				<li><a href="../Reports/categorized reports.html">Reports</a></li>
+				<li><a href="../KPI/kpi.html">KPI</a></li>
+				<li><a href="../Settings/User.html">Settings</a></li>
+				<li><a href="../Login (index)/login.html">Log out</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div id="always">
+				<h1>Input an item</h1>
+				<div id="method1">
+					<h1>Method 1</h1>
+					<form>
+						<table>
+							<tr>
+								<td><label>Item name</label></td>
+							</tr>
+							<tr>
+								<td><input type="" name="itemName"></td>
+							</tr>
+
+							<tr>
+								<td><label>Category</label></td>
+							</tr>
+							<tr>
+								<td><input type="" name="itemName"></td>
+								<td id="addBtn">+</td>
+								<td><input type="" name="addCategory"></td>
+							</tr>
+
+							<tr>
+								<td><label>Cost</label></td>
+							</tr>
+							<tr>
+								<td><input type="" name="itemName"></td>
+							</tr>
+
+							<tr>
+								<td><label>Depreciation %</label></td>
+							</tr>
+							<tr>
+								<td><input type="" name="itemName"></td>
+							</tr>
+
+							<tr>
+								<td><label>Date purchased</label></td>
+							</tr>
+							<tr>
+								<td><input type="" name="itemName"></td>
+							</tr>
+
+							<tr>
+								<td><label>UPC (Optional)</label></td>
+							</tr>
+							<tr>
+								<td><input type="" name="itemName"></td>
+							</tr>
+						</table>
+						<button id="calcBtn">Calculate</button>
+					</form>
+				</div>
+				<div id="method2">
+					<h1>Method 2</h1>
+					<form>
+						<p>Upload a CSV file of your spreadsheet to input all the data into the report system.</p>
+						<input type="file" name="">
+					</form>
+				</div>
+			</div>
+
+			<div id="result">
+				<div id="resultTxt">
+					<p id="currentValueText">Current value:</p>
+					<p id="price">$270.75</p>
+					<h2 id="itemheader">for the item - CCM racer bike.</h2>
+					<h2>Calculations:</h2>
+					<h2 id="step1">Step 1:</h2>
+					<p>The item costs $300 CAD.</p>
+					<p>The depreciation percentage is 5%.</p>
+					<p>5% of $300 is $15</p>
+					<p>The item has depreciated over 2 years</p>
+					<p>So the value is 300 x 0.95 * 0.95 = $270.75</p>
+					<h2 id="step2">Step 2</h2>
+					<p>Item has been added to the bike report!</p>
+				</div>
+			</div>
+
+			<div id="result2">
+				<div id="resultTxt">
+					<h1>Items added</h1>
+					<p>The items in the spreadsheet have been added into the report</p>
+				</div>
+			</div>
+
+			<div id="error">
+				<div id="resultTxt">
+					<h1>Error</h1>
+					<p>Couldn't process the item because of the following conditions:</p>
+					<p>Missing item name</p>
+					<p>Missing category</p>
+					<p>Missing cost</p>
+					<p>Missing depreciation %</p>
+					<p>Missing date purchased</p>
+					<p>Invalid CSV file</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="recent">
+			<h1>Recently added items</h1>
+			<table id="recentitems">
+				<tr>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+					<td>
+						<p>Item</p>
+						<p>Presently $270.75</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

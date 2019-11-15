@@ -1,0 +1,114 @@
+h3 {
+	text-decoration-color: #334;
+	font-size: 24px;
+	font-size-adjust: 25px;
+}
+
+body {
+	font-family: "verdana";
+}
+
+td {
+	padding: 50px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+	border-top: 2.5px solid #626362;
+	border-bottom: 2.5px solid #626362;
+}
+li {
+	display: inline;
+}
+
+li a {
+	margin: 25px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	color: #363736;
+}
+
+nav {
+	text-align: center;
+	line-height: 3em;
+	padding-bottom: 50px;
+}
+
+.search-container {
+	margin-left: auto;
+}
+
+/*
+.topnav {
+	margin-left: initial;
+	overflow: hidden;
+	border-top: 2.5px solid #626362;
+	border-bottom: 2.5px solid #626362;
+}
+
+.topnav a {
+  	float: left;
+  	color: black;
+  	text-decoration: bold;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+#result {
+	position: sticky;
+	top: 0;
+	float: right;
+	margin-right: 60px;
+	width: 300px;
+}
+
+#page {
+	float: right;
+	margin-right: 50px;
+}
+
+#categoryTable {
+	padding-bottom: 1000px;
+}
+
+#sortOpts {
+	float: right;
+	margin-right: 50px;
+}
+
+.categoryHeader {
+	width: 100%;
+	height: 80px;
+}
+
+#categoryName {
+	float: left;
+}
+
+#printLink, #exportLink {
+	float: right;
+	padding-left: 30px;
+}
+
+.options {
+	width: 100%;
+	height: 50px;
+	background: lightgray;
+}

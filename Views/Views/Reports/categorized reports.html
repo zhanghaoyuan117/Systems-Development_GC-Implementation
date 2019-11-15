@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reports</title>
+		<link rel="stylesheet" type="text/css" href="categorized reports.css">
+	</head>
+	<body>
+		<header>
+			<div class="header">
+		  		<img src="../Images/Rnbw_Circle.png" alt="logo" />
+		  		<h3>Gianella Cycles</h3>
+			</div>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="../Home/home.html">Home</a></li>
+				<li><a href="../Item Entry/inputitem.html">Input item</a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="../KPI/kpi.html">KPI</a></li>
+				<li><a href="../Settings/User.html">Settings</a></li>
+				<li><a href="../Login (index)/login.html">Log out</a></li>
+			</ul>
+		</nav>
+
+		<div class="options">
+			<input type="text" placeholder="Search.." name="search">
+			<select id="changeCategory" name="category" value="Change category">
+				<option>Change category</option>
+				<option>Category 1</option>
+				<option>Category 2</option>
+				<option>Category 3</option>
+			</select>
+			<a href="#" id="printLink">Print reports</a>
+			<a href="#" id="exportLink">Export data to CSV</a>
+			<select id="sortOpts" name="sort" value="Sort by">
+				<option>Recent items added</option>
+				<option>Recent items added (reverse)</option>
+				<option>Oldest items (by purchase)</option>
+				<option>Newest items (by purchase)</option>
+				<option>Most depreciated</option>
+				<option>Least depreciated</option>
+			</select>
+		</div>
+
+		<div id="result">
+			<div id="resultTxt">
+				<h1>Summary</h1>
+				<p>Number of items</p>
+				<p>Greatest depreciation</p>
+				<p>Least depreciated</p>
+				<p>Recently added item:</p>
+				<hr>
+				<h1>Item name</h1>
+				<h2>Current value: $95</h2>
+				<p>Original cost: $100</p>
+				<p>Depreciation: 5%</p>
+				<p>Date purchased: February 2, 2001</p>
+				<p>UPC: </p>
+
+				<p>Date entered into system: February 2, 2002</p>
+			</div>
+		</div>
+
+		<div class="categoryHeader">
+			<h1 id="categoryName">Category Name...</h1>
+		</div>
+
+		<hr>
+		<p id="page">Page 1 of 5 >></p>
+		<table id="categoryTable">
+			<tr>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+			</tr>
+		</table>
+<!--
+		<h1>Another category name...</h1>
+		<hr>
+		<button id="button2">
+			add
+		</button>
+		<table>
+			<tr>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+				<td>
+					<h3>Item</h3>
+					<p>$0.00</p>
+				</td>
+			</tr>
+		</table>-->
+	</body>
+</html>
