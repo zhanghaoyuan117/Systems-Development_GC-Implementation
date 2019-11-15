@@ -1,0 +1,79 @@
+body {
+	color: black;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: Lucida Sans Unicode, Times, serif;
+	line-height: 1.4em;
+	
+}
+header {
+	height: auto;
+}
+nav{
+	border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../images/border.jpg) 40 round;
+	height:12px;
+	background-color:#2763a1;
+	
+}
+nav ul {
+	margin-left: 120px;	
+	padding: 10px 0px 0px 10px;
+	position:relative;
+	bottom: 45px;
+}
+
+nav li {
+	display: inline;
+	margin-right: 50px;
+}
+
+nav li a {
+	color: #000000;
+	height: 100%;
+	font-style: oblique;
+	border: 2px solid ;
+	display: inline-block;
+  text-decoration: none;
+}
+
+nav li a:hover, nav li a.current {
+	color: red; 
+}
+
+section {
+	float: none;
+	width: 400px;
+	height: 200px;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: larger;
+}
+
+h1{
+	color: #ff0055de;
+	position: relative;
+	background-position: center;
+	text-shadow: 3px 3px #00ffcade;
+	border-style: inset;
+	text-align: left;
+	margin-left: auto;
+    margin-right: auto;
+	height: 100px;
+	width: 800px;
+}
+
+.loginBox {
+	width: 410px;
+	height: 400px;
+	margin: auto;
+	background: #D4D4D4;
+	border-radius: 30px;
+	margin-top: 100px;
+}
+
+#loginForm {
+	padding-left: 120px;
+	padding-top: 100px;
+}

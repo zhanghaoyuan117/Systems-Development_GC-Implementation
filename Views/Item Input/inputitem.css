@@ -1,0 +1,133 @@
+body {
+	font-family: "verdana";
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+	border-top: 2.5px solid #626362;
+	border-bottom: 2.5px solid #626362;
+}
+li {
+	display: inline;
+}
+
+li a {
+	margin: 25px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	color: #363736;
+}
+
+nav {
+	text-align: center;
+	line-height: 3em;
+	padding-bottom: 50px;
+}
+
+#company_name {
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+
+#imageLogo {
+	float: left;
+}
+
+.logo {
+	float: left;
+	width: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	margin-left: 60px;
+	position: relative;
+}
+
+#calcBtn {
+	margin-top: 20px;
+}
+
+#always {
+	width: 40%;
+	float: left;
+}
+
+#result {
+	height: 100%;
+	width: 405px;
+	background: #74F9B4;
+	box-shadow: 5px 5px 5px 5px #5BDA98;
+	border-radius: 30px;
+	float: left;
+}
+
+#resultTxt {
+	margin-left: 30px;
+}
+
+#result2 {
+	height: 100%;
+	width: 405px;
+	background: #74F9B4;
+	box-shadow: 5px 5px 5px 5px #5BDA98;
+	border-radius: 30px;
+	float: left;
+	margin: 30px;
+}
+
+#error {
+	background: red;
+	margin: 30px;
+}
+
+#currentValueText {
+
+}
+
+#price {
+	font-size: 80px;
+	margin-top: -10px;
+}
+
+#error {
+	height: 100%;
+	width: 405px;
+	background: #F95454;
+	box-shadow: 5px 5px 5px 5px #EE2C2C;
+	border-radius: 30px;
+	float: left;
+}
+
+#recent {
+	clear: both;
+	margin-left: 60px;
+	padding-top: 70px;
+}
+
+#recentitems tr, #recentitems td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+}
+
+#itemheader {
+	margin-top: -60px;
+}
+
+#addBtn {
+	padding-left: 30px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
