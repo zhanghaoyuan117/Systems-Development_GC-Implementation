@@ -1,3 +1,3 @@
 function nextPage() {
-	window.location.href = "../Home screen/home.html";
+	window.location.href = "../Home/home.html";
 }
