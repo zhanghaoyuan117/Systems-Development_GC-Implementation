@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="inputitem.css">
+		<link rel="stylesheet" type="text/css" href="item_entry.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="script.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div class="logo">
@@ -22,65 +24,73 @@
 		</nav>
 
 		<div class="content">
-			<div id="always">
-				<h1>Input an item</h1>
-				<div id="method1">
-					<h1>Method 1</h1>
-					<form>
-						<table>
-							<tr>
-								<td><label>Item name</label></td>
-							</tr>
-							<tr>
-								<td><input type="" name="itemName"></td>
-							</tr>
+			<div>
+				<div id="always">
+					<h1>Input an item</h1>
+					<div id="method1">
+						<h1>Method 1</h1>
+						<form action="../../Controllers/ItemEntryController.php" method="POST">
+							<table>
+								<tr>
+									<td><label>Item name</label></td>
+								</tr>
+								<tr>
+									<td><input type="text" name="itemName"></td>
+								</tr>
 
-							<tr>
-								<td><label>Category</label></td>
-							</tr>
-							<tr>
-								<td><input type="" name="itemName"></td>
-								<td id="addBtn">+</td>
-								<td><input type="" name="addCategory"></td>
-							</tr>
+								<tr>
+									<td><label>Category</label></td>
+								</tr>
+								<tr>
+									<td>
+										<select name="category">
+											<option value="uncategorized">Uncategorized</option>
+										</select>		
+									</td>
+									<td id="addBtn">+</td>
+									<td><input type="" name="addCategory"></td>
+								</tr>
 
-							<tr>
-								<td><label>Cost</label></td>
-							</tr>
-							<tr>
-								<td><input type="" name="itemName"></td>
-							</tr>
+								<tr>
+									<td><label>Cost</label></td>
+								</tr>
+								<tr>
+									<td><input type="" name="cost"></td>
+								</tr>
 
-							<tr>
-								<td><label>Depreciation %</label></td>
-							</tr>
-							<tr>
-								<td><input type="" name="itemName"></td>
-							</tr>
+								<tr>
+									<td><label>Depreciation %</label></td>
+								</tr>
+								<tr>
+									<td><input type="" name="depreciationPercentage">%</td>
+								</tr>
 
-							<tr>
-								<td><label>Date purchased</label></td>
-							</tr>
-							<tr>
-								<td><input type="" name="itemName"></td>
-							</tr>
+								<tr>
+									<td><label>Date purchased</label></td>
+								</tr>
+								<tr>
+									<td><input type="" name="purchaseDate"></td>
+								</tr>
 
-							<tr>
-								<td><label>UPC (Optional)</label></td>
-							</tr>
-							<tr>
-								<td><input type="" name="itemName"></td>
-							</tr>
-						</table>
-						<button id="calcBtn">Calculate</button>
-					</form>
-				</div>
-				<div id="method2">
-					<h1>Method 2</h1>
-					<form>
-						<p>Upload a CSV file of your spreadsheet to input all the data into the report system.</p>
-						<input type="file" name="">
-					</form>
+								<tr>
+									<td><label>UPC (Optional)</label></td>
+								</tr>
+								<tr>
+									<td><input type="" name="upc"></td>
+								</tr>
+							</table>
+							<button id="calcBtn">Calculate</button>
+						</form>
+					</div>
+
+					<div id="method2">
+						<h1>Method 2</h1>
+						<form action="../../Controllers/ItemEntryMethod2Controller.php" method="POST" enctype="multipart/form-data">
+							<p>Upload a CSV file of your spreadsheet to input all the data into the report system.</p>
+							<input type="file" name="fileUploader">
+							<button id="readCSVBtn">Calculate</button>
+						</form>
+					</div>
 				</div>
 			</div>
 
@@ -101,13 +111,58 @@
 				</div>
 			</div>
 
+			<div id="recent">
+				<h1>Recently added items</h1>
+				<table id="recentitems">
+					<tr>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+						<td>
+							<p>Item</p>
+							<p>Presently $270.75</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+			<!--
 			<div id="result2">
 				<div id="resultTxt">
 					<h1>Items added</h1>
 					<p>The items in the spreadsheet have been added into the report</p>
 				</div>
-			</div>
+			</div>-->
 
+			<!--
 			<div id="error">
 				<div id="resultTxt">
 					<h1>Error</h1>
@@ -120,48 +175,6 @@
 					<p>Invalid CSV file</p>
 				</div>
 			</div>
-		</div>
-
-		<div id="recent">
-			<h1>Recently added items</h1>
-			<table id="recentitems">
-				<tr>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-					<td>
-						<p>Item</p>
-						<p>Presently $270.75</p>
-					</td>
-				</tr>
-			</table>
-		</div>
+		</div>-->
 	</body>
 </html>
